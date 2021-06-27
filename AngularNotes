@@ -1,0 +1,51 @@
+Basic->
+1- Use TypeScript -> a Super Set to javaScript
+ Ts cannot run on the browser and we can convert it into javaScript at the end.
+ JavaScript runs on the browser.
+
+Install npm globally ->
+npm install -g @angular/cli
+
+Folder structure and How angular Works->
+
+karma.conf -> used to Test Angular application.
+package.json -> All the dependencies by the project.
+tsconfig.json -> TypeScript Compiler.
+node-modules -> all the dependencies those were downloaded by Npm.
+Environments -> where we manage diff Environment Variables.
+index.html and main.ts and app-> very imp files
+
+---> How Anagular app Starts?
+index.html -> single page that you see on the UI.
+1-first it will see the index.html and kick start main.ts
+2-bootstart the AppModule from main.ts.
+3-from AppModule it will bootstrap appcomponent.
+
+
+Components :->
+Are the key building blcoks of Any angular Application.
+Angular Components we write what we are planing to show and angular do the 
+heavy liftign work . One of the js bundel containing sc to show components and
+that is doing the work.
+
+@component-> Dacorator -> used to add additional information to classes or directive
+selector , templateUrl , styleurl
+-------------------------------------------------
+
+bindinf ralated notes ->
+
+[value] = "name" and value = "{{name}}"
+First one we are setting the input element value object to some value . 2nd case 
+input element value attribute to some text.
+
+[(ngmodel)] -> can be used on an element which is having value attribute.
+If the value changed from Ui Side , then it will bind it in TS and vice versha.
+Thats why called as two way binding.
+
+directive -> Are the instructions you place on your template.
+it allows you to adjust the parts of the elements it sits on.
+
+
+
+
+
