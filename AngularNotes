@@ -45,6 +45,102 @@ Thats why called as two way binding.
 directive -> Are the instructions you place on your template.
 it allows you to adjust the parts of the elements it sits on.
 
+It will be nice if we can listen to our custom events.
+
+@input -> Sending data from parent component to child component.
+From the parent Html file we can send the data.
+@input() -> is a dacorator ->in Angular dacorator can be assigned to not only class,
+but other things as well.
+
+<app-user [name]="name" [location]="'Sambalpur'" (nameChange)="onNameChanged($event)">
+
+[] -> binding varibale in usercompnent.ts , () means listening to events coming from
+UserComponent.ts .
+
+property binding and event binding both makes the component communicate withe each other.
+------------------------->
+cli to create a component-> ng g c user-detail
+
+----------------------------------->
+Angular code debugging:-
+Normal Chrome debugger will work.
+----------------------------------->
+To add bootstrap to our application :->
+npm install bootstrap --save   - and this --save
+
+will create an entry in package.json
+so that we can see the dependencies.
+import 'lodash' is the command to import a node_module to TS file.
+---------------------------------------------------
+declare var _: any;
+npm install --save @types/lodash
+--------------------------------------
+ng class is a non-structural directive. *ngFor is a structural directive.
+
+--------------------------------------------------
+Browser events y default bubble up to the parent where as custom events angular do for it.
+-----------------------
+backend services changes we bring to parent component and from there we ll pass it to child components.
+
+
+---------------------------------------------
+
+Template quering with view child and view children.
+In the parent when we want to access the child component or child component elements,
+then we can go for viewChild.
+
+for multiple , we can go for view children.
+
+viewChild and viewChildren dacorator can be passed with either component name or
+template ref or part of the template ref.
+
+Sometimes we queried for complete elemet , but we dont need the Component , but we need
+the Html element.
+
+Todo task -> 1 - check whether you can get template ref in the same component or not?
+
+both are local quering mechanism . It cannot query to child component or parent component.
+--------------------------------------
+Whenever you are setting color or doing something with renderer2 , from elementRef take
+the native element.
+
+------------------------------------------------------
+
+CONTENT PROJECTION IN ANGULAR:-
+
+-> content projection is all about making your UI configurable.
+
+ContentChild and viewChild in a nutshell:-
+
+viewchild can query the child component and rest all template within the component
+Contentchild can query the child component projected inside the component and rest all
+Template inside the projected content.
+
+@contentChild is used when the component is using Content projection and somehow we ned to
+grab hold of the component ref or template ref of the projected content.
+
+---------------------------
+NgTemplate -> It will not be a part of the dom unless we explicitely call it.
+
+Can use the variables that is a part of the component on which <ng-template> resides.
+
+NgTemplateOutlet : -> Used to instantiate a ng-template.
+
+-----------------------------------
+Angular Directives :-
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

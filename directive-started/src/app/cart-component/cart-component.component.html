@@ -1,0 +1,20 @@
+  <input
+      class="form-control form-control-sm my-2"
+      type="text"
+      placeholder=""
+      aria-label=".form-control-sm example"
+      #item
+      [(ngModel)]="newItem"
+  >
+  <button
+      type="button"
+      class="btn"
+      data-toggle="modal"
+      data-target="#exampleModal"
+      (click) = "onItemAdded(item.value)"
+      [ngClass] = "{'btn-primary' : newItem != '',  'btn-default' : newItem === ''}">Add item</button>
+
+<hr>
+<ul class="list-group">
+<li class="list-group-item" *ngFor = "let item of items">{{item}}</li>
+</ul>

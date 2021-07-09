@@ -1,0 +1,31 @@
+<div class="top-menu">
+  <img class="logo" src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
+</div>
+<div class="demo">
+  <p>Start Date : {{startDate | date : 'MMM dd yyyy'}}</p>
+</div>
+<div #container>
+  <div class="demo">
+    <button [disabled]="onCourceViewed" (click)="onEditCourse()">Edit Course</button>
+  </div>
+  <div class="courses">
+
+    <ng-template #dummyImage let-courseName="describtion">
+      <p class="warn">{{courseName}}  No Image found</p>
+    </ng-template>
+
+    <course-card #cardRef1 [course]="course" (courseSelected)="OnCourseSelected($event)"
+                 *ngFor="let course of courses" [dummyImage] = "dummyImage">
+
+      <app-course-image [iconUrl]="courses[1].iconUrl"></app-course-image>
+
+      <div class="course-description">
+        {{course.longDescription}}
+      </div>
+
+      desription Update : <textarea></textarea>
+
+    </course-card>
+    <hr>
+  </div>
+</div>
