@@ -24,7 +24,7 @@ index.html -> single page that you see on the UI.
 
 Components :->
 Are the key building blcoks of Any angular Application.
-Angular Components we write what we are planing to show and angular do the 
+Angular Components we write what we are planing to show and angular do the
 heavy liftign work . One of the js bundel containing sc to show components and
 that is doing the work.
 
@@ -35,7 +35,7 @@ selector , templateUrl , styleurl
 bindinf ralated notes ->
 
 [value] = "name" and value = "{{name}}"
-First one we are setting the input element value object to some value . 2nd case 
+First one we are setting the input element value object to some value . 2nd case
 input element value attribute to some text.
 
 [(ngmodel)] -> can be used on an element which is having value attribute.
@@ -128,20 +128,4 @@ NgTemplateOutlet : -> Used to instantiate a ng-template.
 
 -----------------------------------
 Angular Directives :-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1- structure Directive and attribute Directives
